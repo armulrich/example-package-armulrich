@@ -8,10 +8,11 @@ build-backend = "hatchling.build"
 name         = "example-package-armulrich"
 dependencies = ["numpy"]
 dynamic = ["version"] 
+description = "A one‑sentence summary of your package"
+readme  = "README.md"  
 
 [tool.hatch]
 version.path = "src/example_package_armulrich/__init__.py"
-
 
 ## Adding testing
 [project.optional-dependencies]
