@@ -5,9 +5,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build" 
 
 [project] 
-name = "example_package_armulrich" 
-version = "0.1.0" 
+name         = "example-package-armulrich"
 dependencies = ["numpy"]
+dynamic = ["version"] 
+
+[tool.hatch]
+version.path = "src/example_package_armulrich/__init__.py"
 
 
 ## Adding testing
